@@ -1,0 +1,54 @@
+@baseurl  = http://178.128.110.188
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ4MTcwNzIzLCJpYXQiOjE2NDc1NjU5MjMsImp0aSI6ImFkYWY1ODk5OWU3OTRlNmJhMmYxY2JkZjFmYmZjOTJhIiwidXNlcl9pZCI6MTI0fQ._iOuxksb1UAbJji57-l5S5JpOZdvVpXmMw3J0WXHmfE
+
+//============================================== get address customer
+###
+GET  {{baseurl}}/api/v1/customer-address/get/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+//============================================== adress detial
+###
+GET  {{baseurl}}/api/v1/customer-address/get/1/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+//============================================== add adress
+###
+POST  {{baseurl}}/api/v1/customer-address/get/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "home",
+    "description": "call on arriving",
+    "address": "5rd floor, north gateway,...",
+    "contact_name": "Mr 2",
+    "contact_number": "017651668",
+    "contact_email": "mr2@gmail.com",
+    "latitude": "12.587857416653483",
+    "longitude": "124.89715081605088",
+    "is_default": "false"
+}
+
+//============================================== update adress
+###
+PUT  {{baseurl}}/api/v1/customer-address/update/2/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "work"
+}
+
+//============================================== delete adress
+###
+DELETE {{baseurl}}/api/v1/customer-address/delete/565/
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
